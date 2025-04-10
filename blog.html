@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+	<title>El Rincón de los Postres</title>
+	<style>
+		/* CSS directamente en la página para facilitar la prueba */
+		#cafe {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			z-index: -1; /* Mantén el video en el fondo */
+		}
+
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: "OldNewspaperTypes", sans-serif;
+			background-color: #000; /* Color de fondo de respaldo si el video no carga */
+		}
+
+		.contenido {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			color: white;
+			z-index: 1; /* Asegura que el texto esté sobre el video */
+		}
+
+		header {
+			padding: 20px;
+		}
+
+		#titulo-viaje {
+			font-family: "OldNewspaperTypes";
+			font-size: 80px;
+			color: #ffffff;
+			text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+			animation: slideInDown 1.5s ease-in-out forwards;
+		}
+
+		#titulo {
+			font-family: "OldNewspaperTypes", sans-serif;
+			font-size: 60px;
+			color: #e3d7bf;
+			text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+			animation: fadeInUp 1.5s ease-in-out forwards;
+		}
+
+		#explore-button {
+			display: inline-block;
+			padding: 15px 30px;
+			margin-top: 20px;
+			background-color: #FFFFFF;
+			color: #000000;
+			text-decoration: none;
+			font-size: 20px;
+			border-radius: 10px;
+			transition: background-color 0.3s ease;
+		}
+
+		#explore-button:hover {
+			background-color: #470a00;
+		}
+
+		/* Animaciones */
+		@keyframes slideInDown {
+			0% {
+				opacity: 0;
+				transform: translateY(-100%);
+			}
+			100% {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+
+		@keyframes fadeInUp {
+			0% {
+				opacity: 0;
+				transform: translateY(20px);
+			}
+			100% {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+	</style>
+</head>
+<body>
+	<video autoplay loop muted playsinline id="cafe">
+		<source src="videofondocafe.mp4" type="video/mp4">
+	</video>
+
+	<div class="contenido">
+		<header>
+			<h1 id="titulo-viaje">"REPOSTECAFE"</h1>
+		</header>
+		<section>
+			<h1 id="titulo">"El rincón donde el café y el cacao cuentan su historia"</h1>
+			<a href="inicio.html" id="explore-button">Explora las recetas</a>
+		</section>
+	</div>
+
+	<footer>
+		<p>Proyecto final Computación| </p>
+	</footer>
+</body>
+</html>

@@ -31,7 +31,7 @@ body {
 
 #cabeceralogo img.logo {
     width: 170px;  /* Ajusta el tamaño del logo */
-    height: 170px;
+    height: 155px;
     border-radius: 50%;/*BORDE DEL LOGO */
     margin-right: 150px;/*BORDE ENTRE EL TITULO Y EL LOGO */
 }

@@ -48,19 +48,23 @@ h2 {
     gap: 15px;
 }
 
+
 /* Contenedor de la imagen */
 .photo-container {
-    position: relative;
+    position: relative;   /* NECESARIO para que el hover no se salga */
+    height: 250px;        /* O el tamaño que tú uses */
     overflow: hidden;
     border-radius: 10px;
-}
-
-/* Imagen de la galería */
-.photo-container img {
-    width: 100%;
-    height: auto;
+  }
+  
+  
+  .photo-container img {
+    height: 100%;         /* Se adapta al alto del contenedor */
+    width: 100%;          /* Se adapta al ancho */
+    object-fit: cover;    /* Recorta para que no se deforme */
     transition: transform 0.3s ease;
-}
+  }
+  
 
 /* Efecto hover para hacer zoom en la imagen */
 .photo-container:hover img {
@@ -101,5 +105,28 @@ h2 {
 
 #explore-button:hover {
     background-color: #EEF400;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Pacifico', cursive;
+    color: #8B4513;
+    margin: 30px 0 10px 0;
+}
+
+/* Estilo común para todas las grids */
+.photo-grid {
+    display: grid;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+/* Sección con 2 o 3 imágenes centrada */
+.photo-grid-small {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    max-width: 700px; /* Ajusta el tamaño según lo que desees */
+    margin: 0 auto;
 }
 
