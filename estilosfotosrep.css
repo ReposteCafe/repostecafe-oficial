@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: -webkit-radial-gradient(circle, #CD6231 30%, #CD8745 60%, #F2B75C 80%, #F2E2A0 100%);
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-image: url('header-background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px 20px;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 80px;
+    color: #FFFFFF;
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+}
+
+p {
+    font-family: 'Pacifico', cursive;
+    font-size: 24px;
+    color: #F4F4F4;
+    margin: 10px 0;
+}
+
+h2 {
+    font-size: 40px;
+    color: #CD6231;
+}
+
+.gallery {
+    margin: 20px auto;
+    width: 80%;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+/* Contenedor de la imagen */
+.photo-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* Imagen de la galería */
+.photo-container img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto hover para hacer zoom en la imagen */
+.photo-container:hover img {
+    transform: scale(1.1);
+}
+
+/* Texto que aparece al hacer hover */
+.photo-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.4); /* Fondo semitransparente */
+    color: #FFFFFF;/*color caferojizo */
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Muestra el texto al hacer hover */
+.photo-container:hover .photo-caption {
+    opacity: 1;
+}
+
+#explore-button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 20px;
+    background-color: #8B4513;
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#explore-button:hover {
+    background-color: #EEF400;
+}
+

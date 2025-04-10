@@ -1,0 +1,196 @@
+/* Reset de márgenes y padding */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Estructura del body para mantener el footer al final */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+}
+
+/* Cabecera */
+#cabeceralogo {
+    width: 100%;
+    height: 150px;
+    padding: 0% 2%;
+    background-color: #C69C6D;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#cabeceralogo > div {
+    max-width: 100%;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+}
+
+#cabeceralogo img.logo {
+    width: 170px;  /* Ajusta el tamaño del logo */
+    height: 170px;
+    border-radius: 50%;/*BORDE DEL LOGO */
+    margin-right: 150px;/*BORDE ENTRE EL TITULO Y EL LOGO */
+}
+
+#cabeceralogo h1 {
+    font: bold 54px Arial, sans-serif;
+    color: #FFFFFF;/*COLOR DEL TITULO*/
+}
+
+/* Menú principal */
+#menuprincipal {
+    width: 100%;
+    height: 50px;
+    padding: 0% 2%;
+    background-color: #C69C6D; /* Tono café actualizado */
+    border-top: 8px solid #5A2D1F; /* Color kaki para los bordes */
+    border-bottom: 8px solid #5A2D1F; /* Color kaki para los bordes */
+    text-align: center;
+}
+
+#menuprincipal > div {
+    width: 100%;
+    margin: 0px auto;
+}
+
+#menuprincipal li {
+    display: inline-block;
+    height: 65px;
+    padding: 15px 10px 0px 10px;
+    margin-right: 100px;
+}
+
+#menuprincipal a {
+    font: bold 24px Arial, sans-serif; /* Aumentado el tamaño de fuente a 24px */
+    color: #FFFFFF; /* Color blanco por defecto */
+    text-decoration: none;
+}
+
+#menuprincipal a:hover {
+    color: #006837; /* Cambiar a negro al pasar el ratón */
+}
+
+/* Contenido principal */
+main {
+    flex-grow: 1; /* Hace que el main ocupe el espacio disponible */
+    width: 90%; /* Ajustamos el ancho a 90% para que no ocupe toda la pantalla */
+    padding: 24px;
+    background-image: url("fondo.jpg");
+    margin: 0 auto; /* Centramos el contenido */
+}
+
+main div {
+    max-width: 100%;
+    margin: 0px auto;
+}
+
+/* Artículos principales */
+#articulosprincipales {
+    width: 80%;  /* Reducido a un 80% del ancho de la página */
+    padding-top: 30px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    text-align: center;  /* Centramos todo el texto dentro de los artículos */
+    margin: 0 auto;  /* Centrar los artículos en la página */
+}
+
+/* Información adicional */
+#infoadicional {
+    float: right;
+    width: 29%;
+    padding: 2%;
+    background-color: #E7F1F5;
+    border-radius: 10px;
+}
+
+#infoadicional h1 {
+    font: bold 18px Arial, sans-serif;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+/* Recuperación de espacio flotante */
+.recuperar {
+    clear: both;
+}
+
+/* Estilos para los artículos */
+article {
+    position: relative;
+    padding: 0px 40px 20px 40px;
+    text-align: justify;  /* Justificar el texto */
+}
+
+/* Eliminar los recuadros morados */
+article time {
+    display: none; /* Eliminamos el time con el recuadro morado */
+}
+
+/* Eliminar los estilos morados */
+.numerodia, .nombredia {
+    display: none; /* Esconde los recuadros morados */
+}
+
+/* Títulos y párrafos de los artículos */
+article h1 {
+    margin-bottom: 20px;
+    font: bold 30px Georgia, sans-serif;
+    text-align: center;  /* Centramos los títulos */
+}
+
+article p {
+    font: 18px Georgia, sans-serif;
+    text-align: justify; /* Justificar el texto */
+    line-height: 1.6;
+    margin: 0 0 15px 0;
+}
+
+/* Imágenes dentro de los artículos */
+figure {
+    margin: 10px 0px;
+    text-align: center;  /* Centrar las imágenes */
+}
+
+figure img {
+    max-width: 80%;  /* Hacemos que las imágenes ocupen un 80% del ancho disponible */
+    height: auto;  /* Mantener la proporción de las imágenes */
+    padding: 1%;
+    border: 1px solid #ddd; /* Borde suave para las imágenes */
+}
+
+/* Pie de página bordes decoracion color cafe  */
+footer#pielogo {
+    width: 100%;
+    padding: 2%;
+    background-color: #976752;
+    clear: both;
+}
+
+/* Secciones del pie de página */
+.seccionpie {
+    float: left;
+    width: 27.33%;
+    padding: 3%;
+}
+
+.seccionpie h1 {
+    font: bold 20px Arial, sans-serif;
+}
+
+.seccionpie p {
+    margin-top: 5px;
+}
+
+.seccionpie a {
+    font: bold 16px Arial, sans-serif;
+    color: #006837; /*contacto de color verde*/
+    text-decoration: none;
+}
+
+
+
+
